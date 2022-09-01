@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body{
+    border: 5px solid black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+a{
+    text-decoration: none;
+}
+
+.flex-container{
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/***Header Style***/
+
+header{
+    background-color: rgb(20, 20, 139);
+    height: 100px;
+
+}
+
+header ul li{
+    margin-top: 30px; 
+    margin-right: 20px;
+}
+
+header ul li a{
+    color: white;
+}
+
+#menu{
+    font-size: 60px;
+    text-align: left;
+    margin-left: 10px;
+    color: white;
+    
+}
+
+#list{
+    display: inline-flex;
+    text-transform: uppercase;
+}

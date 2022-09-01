@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Intems</title>
+
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5;
+            color: azure;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .flex-start{
+            align-items: flex-start;
+        }
+
+        .flex-end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>center</h1>
+    <section class="container center flex">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">item 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tenetur, nihil vitae animi, facilis pariatur, porro.</div>
+    </section>
+
+    <h1>Strectch</h1>
+    <section class="container center stretch">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">item 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tenetur, nihil vitae animi, facilis pariatur, porro.</div>
+    </section>
+
+    <h1>flex-start</h1>
+    <section class="container center flex-start">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">item 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tenetur, nihil vitae animi, facilis pariatur, porro.</div>
+    </section>
+
+    <h1>flex-end</h1>
+    <section class="container center flex-end">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">item 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tenetur, nihil vitae animi, facilis pariatur, porro.</div>
+    </section>
+
+    <h1>baseline</h1>
+    <section class="container center baseline">
+        <div class="item">item 1</div>
+        <div class="item">Lorem ipsum dolor</div>
+        <div class="item">item 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt tenetur, nihil vitae animi, facilis pariatur, porro.</div>
+    </section>
+</body>
+</html>

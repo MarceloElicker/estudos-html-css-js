@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        .container{
+            height: 600px;
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: orange;
+            padding: 0 5px;
+            margin: 2px;
+            flex: 1;
+            text-align: center;
+            color: white;
+        }
+
+        .stretch{
+            align-content: stretch;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <h1>stretch</h1>
+    <div class="container stretch">
+        <div class="item">1Lorem ipsum dolor sit amet</div>
+        <div class="item">2itens</div>
+        <div class="item">3ipsum dolor sit amet consectetur adipisicing elit. Sit et voluptates,</div>
+        <div class="item">4Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit et voluptates, dolor beatae sed similique quia, veritatis dolorum consectetur sapiente laboriosam maxime delectus ex nemo fugit dolorem cum esse vel.</div>
+        <div class="item">5 casa consectetur sapiente laboriosam maxime</div>
+        <div class="item">6laboriosam maxime delectus ex nemo fugit dolorem cum esse vel</div>
+        <div class="item">7 intemconsectetur sapiente laboriosam maxime</div>
+    </div>
+
+    <h1>center</h1>
+    <div class="container center">
+        <div class="item">1Lorem ipsum dolor sit amet</div>
+        <div class="item">2itens</div>
+        <div class="item">3ipsum dolor sit amet consectetur adipisicing elit. Sit et voluptates,</div>
+        <div class="item">4Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit et voluptates, dolor beatae sed similique quia, veritatis dolorum consectetur sapiente laboriosam maxime delectus ex nemo fugit dolorem cum esse vel.</div>
+        <div class="item">5 casa consectetur sapiente laboriosam maxime</div>
+        <div class="item">6laboriosam maxime delectus ex nemo fugit dolorem cum esse vel</div>
+        <div class="item">7 intemconsectetur sapiente laboriosam maxime</div>
+    </div>
+
+    <h1>flex-start</h1>
+    <div class="container flex-start">
+        <div class="item">1Lorem ipsum dolor sit amet</div>
+        <div class="item">2itens</div>
+        <div class="item">3ipsum dolor sit amet consectetur adipisicing elit. Sit et voluptates,</div>
+        <div class="item">4Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit et voluptates, dolor beatae sed similique quia, veritatis dolorum consectetur sapiente laboriosam maxime delectus ex nemo fugit dolorem cum esse vel.</div>
+        <div class="item">5 casa consectetur sapiente laboriosam maxime</div>
+        <div class="item">6laboriosam maxime delectus ex nemo fugit dolorem cum esse vel</div>
+        <div class="item">7 intemconsectetur sapiente laboriosam maxime</div>
+    </div>
+
+    <h1>flex-end</h1>
+    <div class="container flex-end">
+        <div class="item">1Lorem ipsum dolor sit amet</div>
+        <div class="item">2itens</div>
+        <div class="item">3ipsum dolor sit amet consectetur adipisicing elit. Sit et voluptates,</div>
+        <div class="item">4Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit et voluptates, dolor beatae sed similique quia, veritatis dolorum consectetur sapiente laboriosam maxime delectus ex nemo fugit dolorem cum esse vel.</div>
+        <div class="item">5 casa consectetur sapiente laboriosam maxime</div>
+        <div class="item">6laboriosam maxime delectus ex nemo fugit dolorem cum esse vel</div>
+        <div class="item">7 intemconsectetur sapiente laboriosam maxime</div>
+    </div>
+</body>
+</html>
