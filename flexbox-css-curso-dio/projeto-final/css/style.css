@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-body{
-    border: 5px solid black;
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +19,6 @@ div img{
 }
 
 .flex-container{
-    border: 1px solid blue;
     display: flex;
     max-width: 1000px;
     margin: auto;
@@ -60,7 +55,11 @@ header ul li a{
 }
 
 header ul li a:hover{
-    text-decoration: underline;
+    background-color: white;
+    color: rgb(20, 20, 139);
+    border-radius: 10px;
+    padding: 10px;
+
 }
 
 /***Main Style***/
@@ -82,7 +81,7 @@ header ul li a:hover{
     padding-bottom: 20px;
 }
 
-#saiba-mais{
+#btn{
     text-decoration: none;
     display: block;
     width: 210px;
@@ -94,7 +93,7 @@ header ul li a:hover{
     transition: 1s;
 }
 
-#saiba-mais:hover{
+#btn:hover{
     background-color: rgb(126, 235, 18);
     color: rgb(20, 20, 139);
 }
@@ -163,4 +162,85 @@ header ul li a:hover{
 .item-servico a:hover{
     background-color: rgb(126, 235, 18);
     color: rgb(20, 20, 139);
+}
+
+/***bloco 4***/
+
+#planos{
+    height: 100vh;
+    align-items: flex-end;
+    text-align: justify;
+    margin-bottom: 300px;
+    justify-content: space-around;
+
+}
+
+.bloco4{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 3px solid rgb(20, 20, 139);
+    margin: 10px;
+    max-width: 240px;
+    
+}
+
+.bloco4 h3{
+    font-size: 25px;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 3px solid rgb(20, 20, 139);
+    margin: 0 50px 0 50px;
+}
+
+.bloco4 ul{
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco4 ul li{
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.bloco4 ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(20, 20, 139);
+    margin-right: 10px;
+}
+
+.btn{
+    text-decoration: none;
+    display: block;
+    width: 210px;
+    background-color: rgb(20, 20, 139);
+    color: rgb(255, 253, 253);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    transition: 1s;
+}
+
+.btn:hover{
+    background-color: rgb(126, 235, 18);
+    color: rgb(20, 20, 139);
+}
+
+footer{
+    background-color: rgb(20, 20, 139);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    color: white;
+    justify-content: space-between;
 }
