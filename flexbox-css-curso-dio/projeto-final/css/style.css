@@ -17,18 +17,17 @@ ul{
     padding: 0;
 }
 
-ul,
-li,
-a{
-    text-decoration: none;
+div img{
+    display: block;
+    width: 100%;
 }
 
 .flex-container{
     border: 1px solid blue;
     display: flex;
-    justify-content: space-between;
     max-width: 1000px;
     margin: auto;
+    width: 100%;
 }
 
 /***Header Style***/
@@ -36,27 +35,132 @@ a{
 header{
     background-color: rgb(20, 20, 139);
     height: 100px;
-
+    display: flex;
+    align-items: center;
 }
 
-header ul li{
-    margin-top: 30px; 
-    margin-right: 20px;
+header .menu{
+    color: white;
+    justify-content: space-between;
+}
+
+header .list-item{
+    display: flex;
+    text-transform: uppercase;
+    max-width: 300px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header ul li a{
+    text-decoration: none;
     color: white;
+    transition: 1s;
 }
 
-#menu{
-    font-size: 60px;
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+/***Main Style***/
+
+/***bloco 1***/
+.saiba-mais{
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#flex{
+    font-size: 46px;
+    color: rgb(20, 20, 139);
+    padding-bottom: 5px;
+}
+
+.saiba-mais p{
+    padding-bottom: 20px;
+}
+
+#saiba-mais{
+    text-decoration: none;
+    display: block;
+    width: 210px;
+    background-color: rgb(20, 20, 139);
+    color: rgb(255, 253, 253);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#saiba-mais:hover{
+    background-color: rgb(126, 235, 18);
+    color: rgb(20, 20, 139);
+}
+
+/***bloco 2***/
+.quem-somos{
+    max-width: 300px;
     text-align: left;
-    margin-left: 10px;
-    color: white;
-    
 }
 
-#list{
-    display: inline-flex;
-    text-transform: uppercase;
+.quem-somos h2{
+    font-size: 40px;
+    color: rgb(20, 20, 139);
+    margin-left: -10px;
+    padding-bottom: 20px;
+}
+
+/***bloco 3***/
+
+.b3{
+    background-color: rgb(20, 20, 139);
+}
+
+.bloco3{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.bloco3 p{
+    color: white;
+    padding: 20px 0 30px;
+}
+
+#servicos{
+    flex-direction: column;
+    padding: 50px 0 100px;
+}
+
+#servicos h2{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.list-servicos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-servico{
+    text-align: center;
+}
+
+.item-servico a{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(20, 20, 139);
+    background-color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.item-servico a:hover{
+    background-color: rgb(126, 235, 18);
+    color: rgb(20, 20, 139);
 }
